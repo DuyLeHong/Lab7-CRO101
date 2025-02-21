@@ -101,7 +101,7 @@ const ChatScreen = () => {
 const ContactScreen = () => {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Contact Screen</Text>
+      <Text>Setting Screen</Text>
     </View>
   );
 };
@@ -119,7 +119,7 @@ const CustomDrawerContent = (props) => {
             source={{ uri: 'https://avatarfiles.alphacoders.com/838/thumb-1920-83831.jpg' }}
             style={styles.headerImage}
           />
-          <Text style={styles.headerText}>Rocket Raccoon</Text>
+          <Text style={styles.headerText}>Thay Duy</Text>
         </View>
       </ImageBackground>
 

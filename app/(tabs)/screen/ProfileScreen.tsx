@@ -11,12 +11,12 @@ export default function ProfileScreen({ route }) {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Text>Profile Screen</Text>
-        <Text>itemId: {JSON.stringify(route.params.username)}</Text>
-        <Text>otherParam: {JSON.stringify(route.params.password)}</Text>
+        <Text>Username la: {JSON.stringify(route.params.username)}</Text>
+        <Text>Password la: {JSON.stringify(route.params.password)}</Text>
         
         {/* <Button onPress={() => navigation.navigate('Home')}
           title='Go to Home'/> */}
-        <Button onPress={() => navigation.goBack()} 
+        <Button onPress={() => navigation.popTo('Home',{newusername: 'Duyle12345', newpassword: '12345678'})} 
           title='Go Back'/>
       </View>
     );
